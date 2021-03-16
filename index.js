@@ -163,10 +163,10 @@ Use the game function below to do the following:
 let computer = Math.random()
   if (computer <= 0.33){
     computer = 'rock';
-  } else if( computer <= 0.66){
+  } else if(computer <= 0.66){
     computer = 'paper';
-  } else {
-    coputer = 'scissors';
+  } else if(computer > 0.66){
+    computer = 'scissors';
   }
 console.log(computer);
 
@@ -276,9 +276,17 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(string) {
+  let counter = 0;
+  for(let i = 0; i < string.length; i++){
+    if (string[i].includes('a', 'e', 'i', 'o', 'u')){
+      counter++;
+    }
+  }
+  return counter;
 }
+
+console.log(vowelCounter("bananagrams"));
 
 
 
