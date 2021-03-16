@@ -36,7 +36,10 @@ Do the following:
    HINT: no function required
 */
 
-
+let varA = 3;
+let varB = 5;
+varA = varB;
+console.log(varA);
 
 
 
@@ -51,7 +54,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let string = "1999";
+console.log(Number(string));
 
 
 /*
@@ -63,10 +67,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
-
+function multiply(a, b){
+    return (a * b);
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -79,8 +82,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age * 7;
 }
 
 
@@ -144,7 +147,7 @@ let computer = Math.random()
   } else if( computer <= 0.66){
     computer = 'paper';
   } else {
-    coputer= 'scissors';
+    coputer = 'scissors';
   }
 console.log(computer);
 
