@@ -15,10 +15,15 @@ Do the following:
    1. Create a variable called votingAge and assign it a value
    2. Console log true if age is 18 or higher
 
+  
+
    HINT: no function required
 */
 
-
+const votingAge = 18;
+if (votingAge >= 18) {
+console.log("true");
+}
 
 /*
 Task 1b - Values
@@ -133,9 +138,28 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random()
+  if (computer <= 0.33){
+    computer = 'rock';
+  } else if( computer <= 0.66){
+    computer = 'paper';
+  } else {
+    coputer= 'scissors';
+  }
+console.log(computer);
 
 function game(user, computer){
-    /*add your code here*/
+    if (user === computer) {
+      return `it's a tie`;
+    } else if (user === 'rock' && computer === 'scissors'){
+      return `you win!`;
+    } else if (user === 'paper' && computer === 'rock'){
+      return `you win!`;
+    } else if (user === 'scissors' && computer === 'paper'){
+      return `you win!`;
+    } else {
+      return `you lose!`;
+    }
 }
   
   
