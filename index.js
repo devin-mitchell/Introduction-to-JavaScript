@@ -278,15 +278,16 @@ Using the vowelCounter function below do the following:
 
 function vowelCounter(string) {
   let counter = 0;
+  const vowels = "aeiouAEIOU";
+
   for(let i = 0; i < string.length; i++){
-    if (string[i].includes('a', 'e', 'i', 'o', 'u')){
+    if (vowels.indexOf(string[i])!== -1){
       counter++;
     }
   }
   return counter;
 }
-
-console.log(vowelCounter("bananagrams"));
+console.log(vowelCounter("cAlIfOrNiA"));
 
 
 
